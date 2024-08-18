@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Calculator </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <!-- apply favicon icon -->
+    <link rel="icon" href="https://www.shareicon.net/data/2016/01/03/231180_calc_256x256.png" type="text/x-icon">
+
+    <!-- apply link for font awesome -->
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+
+    <script src='js/calcu.js'></script>
+</head>
+
+<body>
+    <center>
+        <h1> Create Simple Calculator Using Javascript </h1>
+    </center>
+    <hr>
+
+    <section id="box">
+        <table width="100%" cellspacing="8">
+            <tr>
+                <td><input type="text" id="display-value" placeholder="0"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id="btn-1" onclick="clr()"> C </button>
+                    <button type="button" id="btn-1" value="%" onclick="return display(this.value)"> % </button>
+                    <button type="button" id="btn-1" onclick="bkp()"> <span class="fas fa-backspace"></span> </button>
+                    <button type="button" id="btn-1" value="/" onclick="return display(this.value)"> / </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="btn" value="7" onclick="return display(this.value)"> 7 </button>
+                    <button type="button" id="btn" value="8" onclick="return display(this.value)"> 8 </button>
+                    <button type="button" id="btn" value="9" onclick="return display(this.value)"> 9 </button>
+                    <button type="button" id="btn-1" value="*" onclick="return display(this.value)"> X </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="btn" value="4" onclick="return display(this.value)"> 4 </button>
+                    <button type="button" id="btn" value="5" onclick="return display(this.value)"> 5 </button>
+                    <button type="button" id="btn" value="6" onclick="return display(this.value)"> 6 </button>
+                    <button type="button" id="btn-1" value="-" onclick="return display(this.value)"> - </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="btn" value="1" onclick="return display(this.value)"> 1 </button>
+                    <button type="button" id="btn" value="2" onclick="return display(this.value)"> 2 </button>
+                    <button type="button" id="btn" value="3" onclick="return display(this.value)"> 3 </button>
+                    <button type="button" id="btn-1" value="+" onclick="return display(this.value)"> + </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="btn" value="00" onclick="return display(this.value)"> 00 </button>
+                    <button type="button" id="btn" value="0" onclick="return display(this.value)"> 0 </button>
+                    <button type="button" id="btn" value="." onclick="return display(this.value)"> . </button>
+                    <button type="button" id="btn-res" value="=" onclick="fnresult()"> = </button>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
